@@ -1,42 +1,64 @@
 body {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .first {
     display: flex;
     justify-content: space-between;
-    background: radial-gradient(white, darkgrey);
+    background: radial-gradient(rgb(221, 221, 221), rgb(67, 66, 66));
     height: 100vh;
     position: relative;
+}
+
+aside {
+    position: absolute;
+    left: 20%;
+}
+
+aside p {
+    font-size: xx-large;
+}
+
+#mclogo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 nav {
     position: absolute;
     right: 5%;
     display: flex;
-    background: lightseagreen;
+    background: rgb(27, 98, 222);
     justify-content: center;
     height: fit-content;
-    margin: 3vh;
+    margin: 3.5vh;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     padding: 0;
+    margin: .2rem 0;
 }
 
 nav ul li {
     margin: 0 .5rem;
-    background: white;
     padding: 0 .5rem;
 }
 
 nav ul li:hover {
     background: white;
+    color: black;
 }
 
-nav ul li a:focus {
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
     color: black;
 }
