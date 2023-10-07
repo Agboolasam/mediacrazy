@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(white, darkgrey);
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    background: lightseagreen;
+    justify-content: center;
+    height: fit-content;
+    margin: 3vh;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 .5rem;
+    background: white;
+    padding: 0 .5rem;
+}
+
+nav ul li:hover {
+    background: white;
+}
+
+nav ul li a:focus {
+    color: black;
+}
