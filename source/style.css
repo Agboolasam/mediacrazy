@@ -35,6 +35,8 @@ nav {
     justify-content: center;
     height: fit-content;
     margin: 3.5vh;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px black;
 }
 
 nav ul {
