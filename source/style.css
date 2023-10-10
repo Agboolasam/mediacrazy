@@ -1,66 +1,94 @@
-body {
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-.first {
-    display: flex;
-    justify-content: space-between;
-    background: radial-gradient(rgb(221, 221, 221), rgb(67, 66, 66));
-    height: 100vh;
-    position: relative;
-}
-
-aside {
-    position: absolute;
-    left: 20%;
-}
-
-aside p {
-    font-size: xx-large;
-}
-
-#mclogo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-nav {
-    position: absolute;
-    right: 5%;
-    display: flex;
-    background: rgb(27, 98, 222);
-    justify-content: center;
-    height: fit-content;
-    margin: 3.5vh;
-    box-sizing: border-box;
-    box-shadow: 0 0 40px black;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: .2rem 0;
-}
-
-nav ul li {
-    margin: 0 .5rem;
-    padding: 0 .5rem;
-}
-
-nav ul li:hover {
-    background: white;
-    color: black;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    color: black;
-}
+ body {
+     margin: 0;
+     padding: 0;
+     color: white;
+ }
+ 
+ .first {
+     display: flex;
+     justify-content: flex-end;
+     background: radial-gradient(rgb(155, 151, 151), rgb(36, 32, 52));
+     height: 100vh;
+     position: relative;
+ }
+ 
+ #nav-div {
+     height: 50%;
+     ;
+ }
+ 
+ aside {
+     position: absolute;
+     left: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ aside p {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     font-weight: 400;
+     font-size: 50px;
+ }
+ 
+ #mclogo {
+     width: 150px;
+     height: 150px;
+     object-fit: cover;
+     margin-left: 40vh;
+ }
+ 
+ nav {
+     position: absolute;
+     right: 5%;
+     top: 4%;
+     display: flex;
+     background: rgb(27, 98, 222);
+     justify-content: center;
+     height: fit-content;
+     margin: 20px;
+     box-sizing: border-box;
+     box-shadow: 0 0 40px black;
+ }
+ 
+ nav ul {
+     display: flex;
+     list-style: none;
+     padding: 0;
+     margin: .2rem 0;
+ }
+ 
+ nav ul li {
+     margin: 0 .5rem;
+     padding: 0 .5rem;
+ }
+ 
+ nav ul li:hover {
+     background: white;
+     color: black;
+ }
+ 
+ nav ul a {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ nav ul li a:hover {
+     color: black;
+ }
+ 
+ #first-display {
+     align-self: flex-end;
+ }
+ 
+ #first-display img {
+     box-sizing: border-box;
+     height: 50vh;
+     width: 20vw;
+     object-fit: cover;
+     align-self: flex-end;
+     margin: 60px;
+     box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.6);
+ }
