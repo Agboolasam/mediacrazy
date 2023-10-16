@@ -1,18 +1,27 @@
 let randomImg = document.getElementById('randomimg');
+const imgNavIcon = document.getElementsByTagName('i');
 const img1 = "/images/avatar.jpg";
 const img2 = "/images/dora.jpg";
 const img3 = "/images/shazam.jpg";
-const img4 = "/ images / photo_2_2023 - 10 - 05 _19 - 52 - 01. jpg"
+const img4 = "/images/quantumania.jpg"
 
-let img = [img1, img2, img3];
+let img = [img1, img2, img3, img4];
 
 function makeRandome() {
+    let oldUrl = document.getElementById('randomimg').src;
+    console.log(oldUrl);
     let imgUrl = img[Math.floor(Math.random() * img.length)];
-    return imgUrl;
-
+    randomImg.src = imgUrl;
 }
+
+//console.log(img.indexOf(imgUrl));
+
+
 async function getRandomImg() {
-    source = await makeRandome();
-    randomImg.src = source;
-
+    await makeRandome();
 }
+setInterval(
+    () => {
+        makeRandome();
+
+    }, 5000);
