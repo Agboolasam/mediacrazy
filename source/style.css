@@ -1,211 +1,323 @@
- body {
-     margin: 0;
-     padding: 0;
-     color: white;
- }
- 
- .first {
-     display: flex;
-     justify-content: flex-end;
-     background: url(/images/firstbg.jpg);
-     height: 100vh;
-     position: relative;
- }
- 
- #nav-div {
-     height: 50%;
-     ;
- }
- 
- aside {
-     position: absolute;
-     left: 20%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- 
- aside p {
-     margin: 0;
-     padding: 0;
-     text-align: center;
-     font-weight: 400;
-     font-size: 50px;
- }
- 
- #mclogo {
-     width: 150px;
-     height: 150px;
-     object-fit: cover;
-     margin-left: 40vh;
- }
- 
- nav {
-     position: absolute;
-     right: 5%;
-     top: 4%;
-     display: flex;
-     background: rgb(27, 98, 222);
-     justify-content: center;
-     height: fit-content;
-     margin: 20px;
-     box-sizing: border-box;
-     box-shadow: 0 0 40px black;
- }
- 
- nav ul {
-     display: flex;
-     list-style: none;
-     padding: 0;
-     margin: .2rem 0;
- }
- 
- nav ul li {
-     margin: 0 .5rem;
-     padding: 0 .5rem;
- }
- 
- nav ul li:hover {
-     background: white;
-     color: black;
-     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
- }
- 
- nav ul a {
-     text-decoration: none;
-     color: white;
- }
- 
- nav ul li a:hover {
-     color: black;
- }
- 
- #first-display {
-     align-self: flex-end;
- }
- 
- #first-display img {
-     box-sizing: border-box;
-     height: 50vh;
-     width: 20vw auto;
-     object-fit: cover;
-     align-self: flex-end;
-     margin: 60px;
-     box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.6);
- }
- 
- .second {
-     position: relative;
-     height: 100vh;
-     margin: 0;
-     color: black;
-     background: url(/images/22293.png) no-repeat;
-     background-position-x: 50%;
-     background-position-y: 50%;
-     text-align: center;
-     display: flex;
- }
- 
- .second img {
-     float: left;
-     box-sizing: border-box;
-     height: 70vh;
-     width: 230px auto;
-     object-fit: cover;
-     margin: 60px;
- }
- 
- .second p {
-     position: absolute;
-     top: 30%;
- }
- 
- .second button {
-     width: 100px;
-     margin: 10px;
-     padding: 5px;
-     background: rgb(50, 106, 202);
-     border: none;
-     box-sizing: border-box;
-     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
- }
- 
- .second button:active {
-     width: 90px;
-     height: 80%;
- }
- 
- .third {
-     margin: 0;
-     background: rgb(27, 98, 222);
-     height: 100vh;
-     text-align: center;
- }
- 
- .third h1 {
-     font-size: xx-large;
- }
- 
- .third h1,
- .third h3 {
-     margin: 0 0 15vh 0;
- }
- 
- .testimonial {
-     display: flex;
-     justify-content: space-evenly;
-     text-align: center;
- }
- 
- .testimonial-comment {
-     background: white;
-     color: black;
-     width: 300px;
-     padding: 5em;
-     margin: 10px;
- }
- 
- .fourth {
-     position: relative;
-     background: rgb(36, 32, 52);
-     height: 100vh;
- }
- 
- .fourth img {
-     box-sizing: border-box;
-     height: 20vh;
-     width: calc(height);
-     object-fit: cover;
-     margin: 60px;
-     border-radius: 50%;
- }
- 
- #fourthdiv {
-     position: absolute;
-     display: flex;
-     width: 100%;
-     top: 30%;
-     justify-content: space-evenly;
- }
- 
- .fourth ul li {
-     list-style: none;
-     margin: 5px;
- }
- 
- .icons {
-     padding-left: 5px;
- }
- 
- #left {
-     right: 15em auto;
- }
- 
- #right {
-     right: 1em;
- }
- 
- .fourth a {
-     text-decoration: none;
-     color: inherit;
- }
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: flex-end;
+    background: url(/images/firstbg.jpg);
+    height: 100vh;
+    position: relative;
+}
+
+#nav-div {
+    height: 50%;
+}
+
+aside {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+#mclogo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 40vh;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    display: flex;
+    background: rgb(27, 98, 222);
+    justify-content: center;
+    height: fit-content;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: .2rem 0;
+}
+
+nav ul li {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+}
+
+nav ul li:hover {
+    background: white;
+    color: black;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+#first-display {
+    align-self: flex-end;
+}
+
+#first-display img {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 20vw auto;
+    object-fit: cover;
+    align-self: flex-end;
+    margin: 60px;
+    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.second {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    color: black;
+    background: url(/images/22293.png) no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    text-align: center;
+    display: flex;
+}
+
+.second img {
+    float: left;
+    box-sizing: border-box;
+    height: 70vh;
+    width: 230px auto;
+    object-fit: cover;
+    margin: 50px;
+}
+
+.second p {
+    position: absolute;
+    top: 30%;
+}
+
+.second button {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background: rgb(50, 106, 202);
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+}
+
+.second button:active {
+    width: 90px;
+    height: 80%;
+}
+
+.third {
+    margin: 0;
+    background: rgb(27, 98, 222);
+    height: 100vh;
+    text-align: center;
+}
+
+.third h1 {
+    font-size: xx-large;
+}
+
+.third h1,
+.third h3 {
+    margin: 0 0 15vh 0;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.testimonial-comment {
+    background: white;
+    color: black;
+    width: 300px;
+    padding: 5em;
+    margin: 10px;
+}
+
+.fourth {
+    position: relative;
+    background: rgb(36, 32, 52);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.fourth img {
+    box-sizing: border-box;
+    height: 20vh;
+    width: calc(height);
+    object-fit: cover;
+    margin: 60px;
+    border-radius: 50%;
+}
+
+#fourthdiv {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    top: 30%;
+    justify-content: space-evenly;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.fourth ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.icons {
+    padding-left: 5px;
+}
+
+.fourth a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#comment-form {
+    text-align: center;
+}
+
+#fourthdiv input {
+    margin: 5px;
+    box-sizing: border-box;
+    outline: inset rgba(0, 0, 0, 0.2);
+    border: none;
+    color: azure;
+    text-align: center;
+    background-color: rgba(102, 33, 33, 0.2);
+    transition: 230ms ease-in-out;
+}
+
+#fourthdiv textarea {
+    margin: 5px;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+    outline: none;
+    transition: 230ms ease-in-out;
+}
+
+#fourthdiv input:focus,
+#fourthdiv textarea:focus {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:1075px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .first {
+        height: 100vh;
+    }
+    .first img {
+        height: 5rem;
+    }
+    #mclogo {
+        margin-left: 20px;
+    }
+    nav ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: .2rem 0;
+    }
+    nav ul li {
+        border-bottom: solid 1px rgba(0, 0, 0);
+        padding: 0.1em;
+    }
+    aside {
+        position: absolute;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #second-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second img {
+        float: bottom;
+        margin: auto;
+        width: 100%;
+        object-fit: cover;
+        max-height: calc(width/2);
+    }
+    .second p {
+        top: 60%;
+    }
+    .third {
+        height: fit-content;
+    }
+    .testimonial {
+        flex-direction: column;
+    }
+    .testimonial-comment {
+        width: auto;
+    }
+    .fourth {
+        overflow-y: scroll;
+    }
+    #fourthdiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        top: 5%;
+        position: absolute;
+    }
+    .fourth ul {
+        display: flex;
+    }
+    .fourth img {
+        height: 10vh;
+        width: calc(height);
+    }
+    .fourth textarea {
+        width: 100%;
+    }
+}
